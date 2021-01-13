@@ -87,7 +87,7 @@ $params = (new VideoConvertParams())
      
      ```php
      <?php
-     $myComplexFilter = new class interface FFMpegVideoFilterInterface {
+     $myComplexFilter = new class implements FFMpegVideoFilterInterface {
         public function getFFmpegCLIValue(): string
         {
              return '[in]yadif=0:0:0[middle];[middle]scale=iw/2:-1[out]';
